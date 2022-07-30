@@ -4,7 +4,8 @@
   "description": "smkr software journey",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "smanikantaraju",
   "license": "ISC",
@@ -12,9 +13,20 @@
     "@types/node": "18.6.2",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
-    "next": "^12.1.0",
+    "eslint": "8.20.0",
+    "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "typescript": "4.7.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.31.0",
+    "@typescript-eslint/parser": "5.31.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.30.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.1",
+    "prettier": "2.7.1"
   }
 }
