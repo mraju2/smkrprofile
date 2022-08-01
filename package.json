@@ -4,6 +4,7 @@
   "description": "smkr software journey",
   "main": "index.js",
   "scripts": {
+    "dev": "next dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
@@ -11,8 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "18.6.2",
-    "@types/react": "18.0.15",
+    "@types/react": "18.0.1",
     "@types/react-dom": "18.0.6",
+    "clsx": "1.2.1",
     "eslint": "8.20.0",
     "next": "12.1.0",
     "react": "17.0.2",
@@ -25,8 +27,10 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.30.1",
-    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-typescript-sort-keys": "^2.1.0",
     "husky": "8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "2.7.1"
   }
 }
