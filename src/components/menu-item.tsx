@@ -1,5 +1,4 @@
 import { FunctionComponent, HTMLAttributes, ReactNode } from "react";
-import clsx from "clsx";
 
 export interface MenuItemProps extends HTMLAttributes<HTMLElement> {
   childern?: ReactNode;

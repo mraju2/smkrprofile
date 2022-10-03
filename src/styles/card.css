@@ -1,0 +1,15 @@
+.card
+{
+    @apply mt-4;
+}
+
+.card__header
+{
+    @apply h-8;
+}
+
+.card__title
+{
+    @apply font-bold;
+    @apply text-lg;
+}

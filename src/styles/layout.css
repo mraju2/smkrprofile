@@ -1,0 +1,5 @@
+.layout
+{
+    @apply bg-primary;
+    @apply h-screen;
+}
