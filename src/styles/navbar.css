@@ -1,0 +1,7 @@
+.navbar{
+    @apply flex;
+    @apply items-center;
+    @apply justify-between;
+    @apply w-full;
+    @apply relative;
+}
