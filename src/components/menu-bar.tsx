@@ -18,6 +18,7 @@ export const MenuBar: FunctionComponent<MenuBarProps> = ({ children }) => {
           Resume
         </a>
       </div>
+      {children}
     </div>
   );
 };

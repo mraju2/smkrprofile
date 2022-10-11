@@ -30,6 +30,7 @@ export const MenuItem: FunctionComponent<MenuItemProps> = ({
         </span>
       )}
       <a href={urlpath}>{title}</a>
+      {children}
     </li>
   );
 };

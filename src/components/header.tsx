@@ -6,9 +6,5 @@ export interface HeaderProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const Header: FunctionComponent<HeaderProps> = ({ children, title }) => {
-  return (
-    <header className="header">
-      {children}
-    </header>
-  );
+  return <header className="header">{children}</header>;
 };
