@@ -30,10 +30,7 @@ export const MenuItem: FunctionComponent<MenuItemProps> = ({
         </span>
       )}
       <a href={urlpath}>{title}</a>
-<<<<<<< HEAD
       {children}
-=======
->>>>>>> 5c59fa9 (Merge changes)
     </li>
   );
 };
