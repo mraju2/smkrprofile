@@ -1,9 +1,11 @@
 .header
 {
     @apply flex;
-    @apply h-12;
-    @apply justify-between;
-    @apply w-full
+    @apply items-center;
+    @apply w-full;
+    @apply h-24;
+    @apply pl-12 pr-12;
+    @apply top-0 z-10;
 }
 
 .header__icon
