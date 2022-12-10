@@ -18,7 +18,10 @@ export const MenuBar: FunctionComponent<MenuBarProps> = ({ children }) => {
           Resume
         </a>
       </div>
+<<<<<<< HEAD
       {children}
+=======
+>>>>>>> 5c59fa9 (Merge changes)
     </div>
   );
 };
