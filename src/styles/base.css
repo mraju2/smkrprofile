@@ -1,0 +1,13 @@
+html
+{
+    @apply h-full;
+}
+
+body
+{
+    @apply h-full;
+    @apply bg-background-1;
+    @apply font-sans;
+    @apply leading-normal;
+
+}
