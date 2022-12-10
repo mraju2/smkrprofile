@@ -1,9 +1,9 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:ital,wght@0,100;0,300;0,600;1,500;1,600&display=swap');
 @import "./header.css";
 @import "./card.css";
-@import "./layout.css";
+@import "./base.css";
 @import "./navbar.css";
 @import "./menubar.css";
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
