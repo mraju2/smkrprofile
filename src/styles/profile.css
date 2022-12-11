@@ -1,0 +1,31 @@
+.profile{
+}
+.nameheader {
+    @apply text-text-green;
+    @apply font-mono;
+}
+.big__heading{
+    @apply font-sans;
+    @apply text-text-1;
+    @apply font-semibold;
+    font-size: clamp(40px, 7vw, 60px)
+}
+
+.big__heading_sub{
+    @apply font-sans;
+    @apply text-text-1;
+    font-size: clamp(40px, 7vw, 60px);
+    @apply font-semibold;
+    @apply opacity-50;
+}
+.nametagline {
+    @apply text-text-2;
+}
+.profile__description{
+    @apply font-sans;
+    @apply text-text-1;
+    @apply text-[18px];
+    @apply font-semibold;
+    @apply max-w-[850px];
+    @apply opacity-50;
+}
