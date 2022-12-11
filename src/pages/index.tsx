@@ -7,6 +7,7 @@ import { NavBar } from "../components/navbar";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { MenuBar } from "../components/menu-bar";
 import { About } from "../components/about";
+import { ProfileHeader } from "../components/profile-header";
 
 export const Index: FunctionComponent = () => {
   return (
@@ -17,8 +18,13 @@ export const Index: FunctionComponent = () => {
             <MenuBar />
           </NavBar>
         </Header>
-        <Lesson></Lesson>
-        <About />
+        <div className="flex justify-between items-start">
+          <div className="w-[30px]"></div>
+          <section>
+            <ProfileHeader></ProfileHeader>
+          </section>
+          <div className="w-[30px]"></div>
+        </div>
       </Layout>
     </>
   );
