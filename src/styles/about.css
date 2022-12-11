@@ -37,8 +37,7 @@ h1 {
 
 .inner {
     @apply grid;
-    @apply grid-cols-[3fr,
-    2fr];
+    @apply grid-cols-[3fr,2fr];
     @apply gap-[50px];
 }
 

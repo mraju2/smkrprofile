@@ -26,6 +26,6 @@
     @apply text-text-1;
     @apply text-[18px];
     @apply font-semibold;
-    @apply max-w-[600px];
+    @apply max-w-[850px];
     @apply opacity-50;
 }

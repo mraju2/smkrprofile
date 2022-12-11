@@ -20,8 +20,9 @@ export const Index: FunctionComponent = () => {
         </Header>
         <div className="flex justify-between items-start">
           <div className="w-[30px]"></div>
-          <section>
+          <section className="pt-[100px] pb-[100px] pl-[100px] pr-[100px]">
             <ProfileHeader></ProfileHeader>
+            <About></About>
           </section>
           <div className="w-[30px]"></div>
         </div>
