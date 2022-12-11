@@ -6,6 +6,7 @@ import { Layout } from "../components/layout";
 import { NavBar } from "../components/navbar";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { MenuBar } from "../components/menu-bar";
+import { About } from "../components/about";
 
 export const Index: FunctionComponent = () => {
   return (
@@ -17,6 +18,7 @@ export const Index: FunctionComponent = () => {
           </NavBar>
         </Header>
         <Lesson></Lesson>
+        <About/>
       </Layout>
     </>
   );
