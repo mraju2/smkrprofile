@@ -18,7 +18,7 @@ export const Index: FunctionComponent = () => {
           </NavBar>
         </Header>
         <Lesson></Lesson>
-        <About/>
+        <About />
       </Layout>
     </>
   );

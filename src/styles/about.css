@@ -17,7 +17,7 @@
     @apply bottom-[-4px];
     content: "0" "1" ".";
     font-size: clamp(15px, 3vw, 20px);
-    font-weight: 400;
+    @apply font-[400];
 }
 
 .top-heading-number::after {
@@ -28,7 +28,7 @@
     content: "";
     @apply block;
     @apply w-[300px];
-    height: 1px;
+    @apply h-[1px];
 }
 
 h1 {
@@ -37,7 +37,8 @@ h1 {
 
 .inner {
     @apply grid;
-    @apply grid-cols-[3fr,2fr];
+    @apply grid-cols-[3fr,
+    2fr];
     @apply gap-[50px];
 }
 
@@ -46,7 +47,6 @@ h1 {
     @apply font-sans;
     @apply text-[18px];
     @apply leading-[1.3];
-
 }
 
 .about-inner-section>div>p {
@@ -69,7 +69,6 @@ h1 {
 }
 
 .wrapper-image .img {
-
     @apply relative;
     @apply rounded-[4px];
     filter: grayscale(100%) contrast(1);
