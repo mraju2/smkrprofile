@@ -5,7 +5,7 @@ const colors = {
   black: "#00000",
   green: { 1: "#64FFDA" },
   blue: { 1: "#112240", 2: "#1C2E43" },
-  gray: { 1: "#CCD6F6", 2: "#A8B2D1" },
+  gray: { 1: "#CCD6F6", 2: "#A8B2D1", 3: "#8892b0" },
 };
 module.exports = {
   content: ["src/**/*.tsx"],
@@ -21,6 +21,7 @@ module.exports = {
       "text-1": colors.gray[1],
       "text-2": colors.gray[2],
       "text-green": colors.green[1],
+      "text-sub": colors.gray[3],
     },
     fontFamily: {
       sans: ["Inter", "Calibre", "San Francisco", "SF Pro Text"],
