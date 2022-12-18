@@ -4,7 +4,7 @@ const colors = {
   white: "#fffff",
   black: "#00000",
   green: { 1: "#64FFDA" },
-  blue: { 1: "#112240", 2: "#1C2E43" },
+  blue: { 1: "#112240", 2: "#1C2E43", 3: "#081830" },
   gray: { 1: "#CCD6F6", 2: "#A8B2D1", 3: "#8892b0" },
 };
 module.exports = {
@@ -15,9 +15,11 @@ module.exports = {
       ...colors,
       transparent: "transparent",
       "background-1": colors.blue[1],
+      "hover-1": colors.blue[3],
       secondary: "#2a2b2b",
       white: "#ffffff",
       silver: "#ecebff",
+      slate: "#E2E8F0",
       "text-1": colors.gray[1],
       "text-2": colors.gray[2],
       "text-green": colors.green[1],
