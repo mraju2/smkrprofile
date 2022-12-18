@@ -5,7 +5,7 @@ export interface AboutProps extends HTMLAttributes<HTMLLinkElement> {
 
 export const About: FunctionComponent<AboutProps> = () => {
   return (
-    <section className="pt-[100px] pb-[100px]">
+    <section className="pt-[100px]">
       <h1 className="top-heading-number">Aboout Me</h1>
       <div className="inner">
         <div className="about-inner-section">
