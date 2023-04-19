@@ -20,12 +20,12 @@ export const About: FunctionComponent<AboutProps> = () => {
               experience, with over{" "}
               <span className="text-text-green">10 years</span> spent in
               software development. I have expertise in{" "}
-              <span className="text-text-green">C# and Angular</span>, and a
-              proven track record of delivering successful projects.
+              <span className="text-text-green">C#, Angular and React</span>,
+              and a proven track record of delivering successful projects.
             </p>
             <p>
               In addition to my professional experience, I have also developed
-              valuable skills and knowledge in 8
+              valuable skills and knowledge in
               <span className="text-text-green">
                 Web3, Solidity, smart contracts, and the ETH Chain
               </span>{" "}

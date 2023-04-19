@@ -2,7 +2,6 @@ import { FunctionComponent, useState } from "react";
 import { clsx } from "clsx";
 
 export const Experience: FunctionComponent = () => {
-  const [activeRole, setActiveRole] = useState<number>(1);
   const [activeJob, setActiveJob] = useState<number>(1);
   return (
     <>
@@ -19,10 +18,9 @@ export const Experience: FunctionComponent = () => {
               )}
               onClick={() => {
                 setActiveJob(1);
-                setActiveRole(1);
               }}
             >
-              Toshiba-TSIP(03/2013-Present)
+              Toshiba-TSIP
             </button>
             <button
               className={clsx(
@@ -31,10 +29,9 @@ export const Experience: FunctionComponent = () => {
               )}
               onClick={() => {
                 setActiveJob(2);
-                setActiveRole(4);
               }}
             >
-              Credit Suisse(02/2012-02/2013)
+              Credit Suisse
             </button>
             <button
               className={clsx(
@@ -43,10 +40,9 @@ export const Experience: FunctionComponent = () => {
               )}
               onClick={() => {
                 setActiveJob(3);
-                setActiveRole(5);
               }}
             >
-              Efkon(01/2010 to 01/2012)
+              Efkon
             </button>
             <button
               className={clsx(
@@ -55,7 +51,6 @@ export const Experience: FunctionComponent = () => {
               )}
               onClick={() => {
                 setActiveJob(4);
-                setActiveRole(6);
               }}
             >
               SKDE
@@ -67,10 +62,9 @@ export const Experience: FunctionComponent = () => {
               )}
               onClick={() => {
                 setActiveJob(5);
-                setActiveRole(7);
               }}
             >
-              Job Hustling
+              Unemployed
             </button>
             <button
               className={clsx(
@@ -79,7 +73,6 @@ export const Experience: FunctionComponent = () => {
               )}
               onClick={() => {
                 setActiveJob(6);
-                setActiveRole(8);
               }}
             >
               Education
@@ -88,108 +81,11 @@ export const Experience: FunctionComponent = () => {
         </section>
       </div>
       <div className="mt-[30px] flex justify-self-stretch">
-        <section className="rectangle">
-          <div className="flex flex-col">
-            <button
-              className={clsx(
-                "position__button",
-                activeRole === 1 && "position__button__active"
-              )}
-              onClick={() => {
-                setActiveJob(1);
-                setActiveRole(1);
-              }}
-            >
-              Principal Engineer
-            </button>
-            <button
-              className={clsx(
-                "position__button",
-                activeRole === 2 && "position__button__active"
-              )}
-              onClick={() => {
-                setActiveJob(1);
-                setActiveRole(2);
-              }}
-            >
-              Module Lead
-            </button>
-            <button
-              className={clsx(
-                "position__button",
-                activeRole === 3 && "position__button__active"
-              )}
-              onClick={() => {
-                setActiveJob(1);
-                setActiveRole(3);
-              }}
-            >
-              Senior Software Engineer
-            </button>
-            <button
-              className={clsx(
-                "position__button",
-                activeRole === 4 && "position__button__active"
-              )}
-              onClick={() => {
-                setActiveJob(2);
-                setActiveRole(4);
-              }}
-            >
-              ENO
-            </button>
-            <button
-              className={clsx(
-                "position__button",
-                activeRole === 5 && "position__button__active"
-              )}
-              onClick={() => {
-                setActiveJob(3);
-                setActiveRole(5);
-              }}
-            >
-              Software Engineer
-            </button>
-            <button
-              className={clsx(
-                "position__button",
-                activeRole === 6 && "position__button__active"
-              )}
-              onClick={() => {
-                setActiveJob(4);
-                setActiveRole(6);
-              }}
-            >
-              Asistant Professor
-            </button>
-            <button
-              className={clsx(
-                "position__button",
-                activeRole === 7 && "position__button__active"
-              )}
-              onClick={() => {
-                setActiveJob(5);
-                setActiveRole(7);
-              }}
-            >
-              ItBt
-            </button>
-            <button
-              className={clsx(
-                "position__button",
-                activeRole === 8 && "position__button__active"
-              )}
-              onClick={() => {
-                setActiveJob(6);
-                setActiveRole(8);
-              }}
-            >
-              Engineer
-            </button>
-          </div>
-        </section>
-        {activeRole === 1 && (
+        {activeJob === 1 && (
           <div>
+            <span className="text-text-green">
+              Principal Engineer: 03/2013-Present
+            </span>
             <p className="job__description">
               During my work on a software project, I participated in
               requirement discussions and helped estimate the effort required
@@ -218,54 +114,19 @@ export const Experience: FunctionComponent = () => {
               Staying up-to-date with the latest React developments and industry
               trends.
             </p>
-          </div>
-        )}
-        {activeRole === 2 && (
-          <div>
-            <p className="job__description">
-              Collaborating with a team to understand the requirements and
-              design of a project.
-            </p>
-            <p className="job__description">
-              Writing clean, efficient, and maintainable code using React and
-              related technologies such as HTML, CSS, and JavaScript.
-            </p>
-            <p className="job__description">
-              Implementing user interface features according to design
-              specifications.
-            </p>
             <p className="job__description">
               Identifying and proposing solutions to technical challenges and
               roadblocks.
             </p>
             <p className="job__description">
-              Staying up-to-date with the latest React developments and industry
-              trends.
-            </p>
-          </div>
-        )}
-        {activeRole === 3 && (
-          <div>
-            <p className="job__description">
               I have developed complete UWP apps, including both front-end and
               back-end components, as an individual contributor.
             </p>
-            <p className="job__description">
-              Ensured responsiveness across multiple windows devices.
-            </p>
-            <p className="job__description">
-              As part of my responsibilities at the organization, I develop
-              solutions using C# and the .NET framework, create in-house
-              applications, and provide technical support to stakeholders.
-            </p>
-            <p className="job__description">
-              Played an active role in business proposal meetings to project
-              closure.
-            </p>
           </div>
         )}
-        {(activeRole === 4 || activeRole === 5) && (
+        {activeJob === 2 && (
           <div>
+            <span className="text-text-green">ENO: 02/2012-03/2013</span>
             <p className="job__description">
               As part of my responsibilities at the organization, I develop
               solutions using C# and the .NET framework, create in-house
@@ -280,8 +141,30 @@ export const Experience: FunctionComponent = () => {
             </p>
           </div>
         )}
-        {activeRole === 6 && (
+        {activeJob === 3 && (
           <div>
+            <span className="text-text-green">
+              Software Engineer : 01/2010-01/2012
+            </span>
+            <p className="job__description">
+              As part of my responsibilities at the organization, I develop
+              solutions using C# and the .NET framework, create in-house
+              applications, and provide technical support to stakeholders.
+            </p>
+            <p className="job__description">
+              I also take part in project meetings and report on project
+              statuses and developments to senior team members.
+            </p>
+            <p className="job__description">
+              Write C# code that is clean, efficient, scalable, and dependable
+            </p>
+          </div>
+        )}
+        {activeJob === 4 && (
+          <div>
+            <span className="text-text-green">
+              Associate Professor: 01/2010-01/2012
+            </span>
             <p className="job__description">
               After graduating, I became an assistant professor at the same
               college. I took advantage of the opportunity to spend two more
@@ -293,7 +176,7 @@ export const Experience: FunctionComponent = () => {
             </p>
           </div>
         )}
-        {activeRole === 7 && (
+        {activeJob === 5 && (
           <div>
             <p className="job__description">
               After graduation I was feeling lost and didn&apos;t know what to
@@ -308,7 +191,7 @@ export const Experience: FunctionComponent = () => {
             </p>
           </div>
         )}
-        {activeRole === 8 && (
+        {activeJob === 6 && (
           <div>
             <p className="job__description">
               I graduated from this college back in 2006 and it&apos;s been a

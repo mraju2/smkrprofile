@@ -47,7 +47,7 @@
     @apply text-text-green;
 }
 
-.top-heading-number {
+.job-heading-number {
     @apply relative;
     @apply flex;
     @apply items-center;
@@ -59,7 +59,7 @@
     font-size: clamp(26px, 5vw, 32px);
 }
 
-.top-heading-number::before {
+.job-heading-number::before {
     @apply relative;
     @apply mr-[10px];
     @apply text-text-green;
@@ -69,7 +69,7 @@
     @apply font-[400];
 }
 
-.top-heading-number::after {
+.job-heading-number::after {
     @apply relative;
     @apply top-[4px];
     @apply bg-[#233554];
@@ -80,13 +80,6 @@
     @apply h-[1px];
 }
 
-.rectangle {
-    @apply w-[300px];
-    @apply h-[350px];
-    @apply bg-transparent;
-    @apply border-l-[0.1px];
-    @apply border-text-2;
-  }
   .job__description {
     @apply relative;
     @apply flex;
