@@ -5,7 +5,7 @@ export interface AboutProps extends HTMLAttributes<HTMLLinkElement> {
 
 export const About: FunctionComponent<AboutProps> = () => {
   return (
-    <section className="pt-[100px] pb-[100px]">
+    <section className="pt-[100px]">
       <h1 className="top-heading-number">Aboout Me</h1>
       <div className="inner">
         <div className="about-inner-section">
@@ -20,12 +20,12 @@ export const About: FunctionComponent<AboutProps> = () => {
               experience, with over{" "}
               <span className="text-text-green">10 years</span> spent in
               software development. I have expertise in{" "}
-              <span className="text-text-green">C# and Angular</span>, and a
-              proven track record of delivering successful projects.
+              <span className="text-text-green">C#, Angular and React</span>,
+              and a proven track record of delivering successful projects.
             </p>
             <p>
               In addition to my professional experience, I have also developed
-              valuable skills and knowledge in 8
+              valuable skills and knowledge in
               <span className="text-text-green">
                 Web3, Solidity, smart contracts, and the ETH Chain
               </span>{" "}

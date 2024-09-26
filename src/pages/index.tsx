@@ -1,15 +1,21 @@
 import { Header } from "../components/header";
-import { Lesson } from "../components/lesson";
 import { FunctionComponent } from "react";
-//import { SocialMedia } from "../components/social-media";
 import { Layout } from "../components/layout";
 import { NavBar } from "../components/navbar";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { MenuBar } from "../components/menu-bar";
 import { About } from "../components/about";
 import { ProfileHeader } from "../components/profile-header";
+import { Experience } from "../components/experience";
+import { useEffect, useRef } from "react";
 
 export const Index: FunctionComponent = () => {
+  const headerRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLElement>(null);
+  const experienceRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Layout>
@@ -21,8 +27,15 @@ export const Index: FunctionComponent = () => {
         <div className="flex justify-between items-start">
           <div className="w-[30px]"></div>
           <section className="pt-[100px] pb-[100px] pl-[100px] pr-[100px]">
-            <ProfileHeader></ProfileHeader>
-            <About></About>
+            <section ref={headerRef}>
+              <ProfileHeader></ProfileHeader>
+            </section>
+            <section ref={aboutRef}>
+              <About></About>
+            </section>
+            <section ref={experienceRef}>
+              <Experience></Experience>
+            </section>
           </section>
           <div className="w-[30px]"></div>
         </div>

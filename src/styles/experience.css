@@ -1,0 +1,101 @@
+.position__button
+{
+    @apply text-text-2;
+    @apply text-left;
+    @apply hover:bg-hover-1;
+    @apply active:border-l-2;
+    @apply active:border-text-green;
+    @apply focus:border-l-2;
+    @apply focus:border-text-green;
+    @apply focus:text-text-green;
+    @apply max-w-[300px];
+    @apply mx-0;
+    @apply mb-1;
+    @apply h-[40px];
+    @apply px-[20px];
+    @apply w-[400px];
+}
+
+.job__button
+{
+    @apply text-text-2;
+    @apply text-left;
+    @apply hover:bg-hover-1;
+    @apply active:border-l-2;
+    @apply active:border-text-green;
+    @apply focus:border-l-2;
+    @apply focus:border-text-green;
+    @apply focus:text-text-green;
+    @apply max-w-[350px];
+    @apply mx-0;
+    @apply mb-1;
+    @apply h-[40px];
+    @apply px-[20px];
+}
+
+.position__button__active
+{
+    @apply border-l-2;
+    @apply border-text-green;
+    @apply text-text-green;
+}
+
+.job__button__active
+{
+    @apply border-l-2;
+    @apply border-text-green;
+    @apply text-text-green;
+}
+
+.job-heading-number {
+    @apply relative;
+    @apply flex;
+    @apply items-center;
+    @apply w-full;
+    @apply mt-[10px];
+    @apply mb-[40px];
+    @apply font-mono;
+    @apply font-semibold;
+    font-size: clamp(26px, 5vw, 32px);
+}
+
+.job-heading-number::before {
+    @apply relative;
+    @apply mr-[10px];
+    @apply text-text-green;
+    @apply bottom-[-4px];
+    content: "0" "3" ".";
+    font-size: clamp(15px, 3vw, 20px);
+    @apply font-[400];
+}
+
+.job-heading-number::after {
+    @apply relative;
+    @apply top-[4px];
+    @apply bg-[#233554];
+    @apply ml-[20px];
+    content: "";
+    @apply block;
+    @apply w-[300px];
+    @apply h-[1px];
+}
+
+  .job__description {
+    @apply relative;
+    @apply flex;
+    @apply items-start;
+    @apply w-full;
+    @apply mt-[10px];
+    @apply mb-[40px];
+    @apply text-text-sub;
+    @apply text-[16px];
+}
+
+.job__description::before {
+    @apply relative;
+    @apply mr-[10px];
+    @apply text-text-green;
+    content: "▹";
+    @apply text-[16px];
+    @apply font-[400];
+}
